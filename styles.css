@@ -1,0 +1,257 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(0 12 75);
+  padding: 20px;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px; /* Размер шрифта для элементов меню */
+}
+a {
+    text-decoration: none;
+  
+}
+
+/* Стили для темной темы */
+.dark-theme {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-theme header {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme footer {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Дополнительные стили для кнопки переключения темы */
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #8dcfff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@keyframes rainbow {
+  0% { color: #ff0000; } /* Красный */
+  20% { color: #ff7f00; } /* Оранжевый */
+  40% { color: #ffff00; } /* Желтый */
+  60% { color: #00ff00; } /* Зеленый */
+  80% { color: #ff60af; } /* Розовый */
+  100% { color: #8a2be2; } /* Фиолетовый */
+}
+
+nav ul li.brand a {
+  animation: rainbow 5s infinite; /* Продолжительность 5 секунд, бесконечное повторение */
+}
+nav ul li.brand {
+  font-family: 'Impact', sans-serif; /* Шрифт для бренда */
+  font-size: 56px; /* Размер шрифта для бренда */
+  margin-right: auto; /* Центрирование */
+  margin-left: -5px; /* Отступ слева */
+    
+}
+
+nav ul li.search-box {
+  float: right;
+}
+
+nav ul li.search-box form {
+  display: flex;
+}
+
+nav ul li.search-box input[type="text"] {
+  margin-right: 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+filter {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 96%;
+  column-gap: 200px;
+    
+}
+
+.weather {
+padding: 10px;
+margin: auto;
+    
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.printer {
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 10px 9px 12px rgba(0, 0, 0, 0.8);
+}
+
+.news {
+    width: auto;
+    height: auto;
+}
+
+.printer img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover; 
+}
+
+.printer.orange {
+  background-color: rgb(14, 107, 168);
+  color: #000;
+    text-decoration: none;
+  
+}
+
+.printer.yellow {
+  background-color: rgb(14, 107, 168);
+  color: #000;
+    text-decoration: none;
+}
+
+.printer.brown {
+  background-color: rgb(14, 107, 168);
+  color: #000;
+    text-decoration: none;
+}
+
+footer {
+  background-color: rgb(165 235 178);
+  padding: 20px;
+  text-align: center;
+}
+
+}
+
+/* Стили для всплывающего окна с фильтрами */
+.filter-dropdown {
+  position: absolute;
+  display: none;
+  top: 70px;
+  right: 50%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+/* Стили для модального окна */
+.modal {
+  display: none; /* По умолчанию скрыто */
+  position: fixed; /* Фиксированное положение */
+  z-index: 1000; /* Поверх других элементов */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* Полупрозрачный цвет фона */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Расположение по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.filter-dropdown h2 {
+  margin-top: 0;
+}
+
+.filter-dropdown label {
+  display: block;
+}
+
+.filter-dropdown button {
+  margin-top: 10px;
+}
+
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  nav ul li.search-box {
+    float: none;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 5px;
+  }
+
+  main {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .printer {
+    width: 300%;
+  }
+}
