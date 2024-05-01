@@ -1,0 +1,472 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(202 255 0);
+  animation: glitch 30s infinite alternate; 
+}
+
+.images{
+    border-radius: 10px;
+    background-color: #cccccc;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+@keyframes glitch {
+    0% {
+        background-color: #ff0000; /* Красный */
+    }
+    10% {
+        background-color: #00ff00; /* Зеленый */
+    }
+    20% {
+        background-color: #b1ffff; /* Голубой */
+    }
+    30% {
+        background-color: #ffff00; /* Желтый */
+    }
+    40% {
+        background-color: #ff00ff; /* Фиолетовый */
+    }
+    50% {
+        background-color: #00ffff; /* Бирюзовый */
+    }
+    60% {
+        background-color: #000000; /* Черный */
+    }
+    70% {
+        background-color: #ffffff; /* Белый */
+    }
+    80% {
+        background-color: #ff8000; /* Оранжевый */
+    }
+    90% {
+        background-color: #800080; /* Фиолетовый */
+    }
+    100% {
+        background-color: #ff0000; /* Красный */
+    }
+}
+
+.filter-toggle {
+  background-color: rgb(14, 107, 168); /* Цвет фона */
+  color: #ffffff; /* Цвет текста */
+  border: none; /* Убираем границу */
+  border-radius: 5px; /* Скругляем углы */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Курсор при наведении */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+/* Эффект наведения */
+.filter-toggle:hover {
+  transform: skewX(-20deg); /* Поворот кнопки на 20 градусов */
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+
+header {
+  background-color: rgb(0 41 255);
+  padding: 20px;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px; /* Размер шрифта для элементов меню */
+}
+a {
+    text-decoration: none;
+  
+}
+
+/* Стили для темной темы */
+.dark-theme {
+    animation: none;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-theme header {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme footer {
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Дополнительные стили для кнопки переключения темы */
+#theme-toggle {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #8dcfff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.search-box input {
+  width: 100%;
+  height: 24px;
+  padding-left: 10px;
+  border: 2px solid #27bfcd;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.search-box button {
+  width: 110px;
+  height: 30px;
+  border: none;
+  background: #27bfcd;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.search-box button:before {
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+@keyframes rainbow {
+  0% { color: #ff0000; } /* Красный */
+  20% { color: #ff7f00; } /* Оранжевый */
+  40% { color: #ffff00; } /* Желтый */
+  60% { color: #00ff00; } /* Зеленый */
+  80% { color: #ff60af; } /* Розовый */
+  100% { color: #0fe; } /* Фиолетовый */
+}
+
+nav ul li.brand a {
+  animation: rainbow 5s infinite; /* Продолжительность 5 секунд, бесконечное повторение */
+}
+nav ul li.brand {
+  font-family: 'Impact', sans-serif; /* Шрифт для бренда */
+  font-size: 56px; /* Размер шрифта для бренда */
+  margin-right: auto; /* Центрирование */
+  margin-left: -5px; /* Отступ слева */
+    
+}
+
+nav ul li.search-box {
+  float: right;
+}
+
+nav ul li.search-box form {
+  display: flex;
+}
+
+nav ul li.search-box input[type="text"] {
+  margin-right: -6px;
+}
+
+nav ul li a {
+	padding: 5px;
+	background: black;
+	border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+filter {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+main {
+  min-height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 10%;
+    
+}
+
+.weather {
+padding: 10px;
+margin: auto;
+    
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.printer {
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 10px 9px 12px rgba(0, 0, 0, 0.8);
+}
+
+.news {
+    width: auto;
+    height: auto;
+}
+
+.printer img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover; 
+}
+
+.printer {
+  background-color: rgb(14, 107, 168);
+  color: #fff;
+    text-decoration: none;
+  
+}
+
+.registration {
+    float: right;
+    margin-right: 20px; /* Регулируйте отступ справа по вашему усмотрению */
+    margin-top: 20px; /* Регулируйте отступ сверху по вашему усмотрению */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+}
+
+.social-icons img{
+        width: 100px;
+        height: 100px;
+    }
+
+footer {
+  background-color: rgb(0 128 255);
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel {
+            margin-top: 10px; 
+            position: relative;
+            width: 80%;
+            max-height: 690px;
+            max-width: 800px;
+            margin: 10px auto 0px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            flex: 0 0 100%;
+            opacity: 0; /* Изначально скрываем все слайды */
+            animation: fadeIn 1s ease-in-out forwards; /* Добавляем анимацию появления */
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1;
+            transition: background-color 0.3s ease-in-out;
+            border-radius: 50%;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .thumbnail-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        /* Дополнительные стили для анимаций */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .carousel img{
+            max-height: 700px;
+            width: 100%;
+            height: 100%;
+        }
+
+/* Стили для всплывающего окна с фильтрами */
+.filter-dropdown {
+  position: absolute;
+  display: none;
+  top: 70px;
+  right: 50%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+/* Стили для модального окна */
+.modal {
+  display: none; /* По умолчанию скрыто */
+  position: fixed; /* Фиксированное положение */
+  z-index: 1000; /* Поверх других элементов */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.69); /* Полупрозрачный цвет фона */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Расположение по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  color: black;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.filter-dropdown h2 {
+  margin-top: 0;
+}
+
+.filter-dropdown label {
+  display: block;
+}
+
+.filter-dropdown button {
+  margin-top: 10px;
+}
+
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+.modal-content {
+	width:50%;	
+}
+
+    main {
+        min-height: 100px;
+    }
+    
+    .registration {
+    width: 149px;
+    float: none;
+    margin: 0px;
+}
+    
+    #content {
+width: 400px;
+}
+    
+    .container { 
+        margin: 25px auto;
+        position: relative;
+        width: 100%; 
+    }
+    
+    .social-icons img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    
+  nav ul li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  nav ul li.search-box {
+    float: none;
+  }
+
+  nav ul li.brand a {
+    max-width: 40%;
+}  
+  
+  nav ul li a {
+    display: block;
+    padding: 5px;
+  }
+
+  main {
+    padding: 0px;
+      column-gap: 60%;
+  }
+  footer {
+        text-align: center;
+    }
+  .printer {
+    width: 300%;
+  }
+/* Увеличиваем ширину карусели на больших экранах */
+  .carousel {
+        max-width: 800px;
+        }
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+}
+}
