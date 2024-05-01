@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="../img/free-icon-epson-882706.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Принтеры Epson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+<style>
+    body {
+        animation: none; 
+        background-color: #b1ffff;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    main {
+        display: block;
+        padding: 20px;
+        width: 70%;
+        margin: auto;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    footer {
+        
+        margin: auto;
+        text-align: center;
+    }
+
+.carousel {
+    position:relative; /* Устанавливаем абсолютное позиционирование для блока .carousel */
+    top: 10px;
+}
+    
+    h1 {
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+  }
+    
+  .printer-info {
+    border-color: white;
+    background-color: #cccccc;  
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+    
+  .printer-info h2 {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .printer-info p {
+    margin-bottom: 15px;
+  }
+    .dark-theme{
+        color: #000;
+}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li class="brand"><a href="../index.html">Epson</a></li>
+            <li class="registration"><a href="../login.html">Регистрация/Авторизация</a></li>
+            <br>
+            <br>
+            <li><a href="../index.html">Главная</a></li>
+			<li><a href="../news.html">Новости</a></li>
+            <li><a href="../inf.html">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+<button id="theme-toggle">Переключить тему</button>
+    
+    
+<main >
+    <h1>Характеристики принтера Epson ET-4760</h1>
+    <div class="images">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="slide"><img src="../img/printer1.jpg" alt="Photo 1"></div>
+                <div class="slide"><img src="../img/printer1(2).jpg" alt="Photo 2"></div>
+                <div class="slide"><img src="../img/printer1(3).jpg" alt="Photo 3"></div>
+                <div class="slide"><img src="../img/printer1(4).jpg" alt="Photo 4"></div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="../img/printer1.jpg" alt="Thumbnail 1" onclick="showSlide(0)">
+            <img class="thumbnail" src="../img/printer1(2).jpg" alt="Thumbnail 2" onclick="showSlide(1)">
+            <img class="thumbnail" src="../img/printer1(3).jpg" alt="Thumbnail 3" onclick="showSlide(2)">
+            <img class="thumbnail" src="../img/printer1(4).jpg" alt="Thumbnail 3" onclick="showSlide(3)">
+        </div>
+    </div>
+    
+  <div class="printer-info">
+    <h2>Основные характеристики:</h2>
+    <p><strong>Тип устройства:</strong> Многофункциональный принтер (печать, сканирование, копирование, факс)</p>
+    <p><strong>Технология печати:</strong> Термическая струйная</p>
+    <p><strong>Разрешение печати:</strong> До 4800 x 1200 точек на дюйм</p>
+    <p><strong>Скорость печати:</strong> До 15 страниц в минуту в черно-белом и цветном режимах</p>
+    <p><strong>Интерфейсы:</strong> USB, Ethernet, Wi-Fi, Wi-Fi Direct</p>
+    <p><strong>Форматы бумаги:</strong> A4, A5, A6, B5, 10x15 см, 13x18 см, 9x13 см, письмо, закладка, официальный, DL (110 x 220 мм), C6 (114 x 162 мм)</p>
+    <p><strong>Емкость лотка для бумаги:</strong> До 250 листов</p>
+    <p><strong>Функции сканирования:</strong> Цветное и черно-белое сканирование до 1200 x 2400 точек на дюйм</p>
+    <p><strong>Емкость чернильных баков:</strong> Достаточно для печати до 7500 страниц в черно-белом и 6000 страниц в цветном режимах</p>
+    <p><strong>Двусторонняя печать:</strong> Автоматическая</p>
+    <p><strong>Дисплей:</strong> ЖК-экран с диагональю 2.4 дюйма</p>
+  </div>
+    
+</main>
+
+<footer>
+    <div class="social-icons">
+        <a href="https://t.me/+uKJDCcZeG0U1YWQy" target="_blank"><img src="../img/free-icon-telegram-739260.png" alt="Telegram"></a>
+        <a href="https://vk.com/club224817216?trackcode=e7c440e0wN3Ko2AFoQqnombVyJdOkVoEIJalSre0JmpkB3gjIQJvvGUuiQfMc7Cqfdr7lUigVhoakZVEtawldn4XUz4lE3DfCkM" target="_blank"><img src="../img/free-icon-vk-2111828.png" alt="VK"></a>
+        <a href="https://www.youtube.com/@user-xs8hy1ei6p/videos" target="_blank"><img src="../img/free-icon-youtube-1077046.png" alt="YouTube"></a>
+    </div>
+    <p>Контактная информация:<br>
+        Адрес: ул. Примерная, д. 123, офис 456<br>
+        Телефон: +7 (XXX) XXX-XX-XX<br>
+        Email: info@espon.ru</p>
+    <p>&copy; 2024 Принтеры Epson</p>
+</footer>
+    
+<script>
+    let currentSlideIndex = 0;
+
+    function changeSlide(n) {
+        var slides = document.querySelectorAll('.slide');
+        currentSlideIndex = (currentSlideIndex + n + slides.length) % slides.length;
+        updateCarousel();
+    }
+
+    function showSlide(index) {
+        currentSlideIndex = index;
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        var slides = document.querySelectorAll('.slide');
+        var thumbnailContainer = document.querySelector('.thumbnail-container');
+        var thumbnails = thumbnailContainer.querySelectorAll('.thumbnail');
+
+        slides.forEach((slide, index) => {
+            if (index === currentSlideIndex) {
+                slide.style.opacity = 1;
+            } else {
+                slide.style.opacity = 0;
+            }
+        });
+
+        var slideWidth = slides[0].clientWidth;
+        var offset = -currentSlideIndex * slideWidth;
+        document.querySelector('.carousel-container').style.transform = 'translateX(' + offset + 'px)';
+
+        thumbnails.forEach((thumbnail, index) => {
+            if (index === currentSlideIndex) {
+                thumbnail.style.border = '2px solid blue'; // Пример стилизации активной миниатюры
+            } else {
+                thumbnail.style.border = 'none'; // Убираем стилизацию неактивных миниатюр
+            }
+        });
+    }
+
+    updateCarousel(); // Вызываем функцию обновления карусели при загрузке страницы
+</script>
+<script src="../script.js"></script>
+</body>
+</html>
